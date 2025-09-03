@@ -1,3 +1,5 @@
+const express = require('express');
+const app = express();
 const Product = require('./../models/productModel');
 
 
@@ -72,4 +74,5 @@ exports.deleteProduct = async (req, res) => {
       message: err.message
     });
   }
+
 };
